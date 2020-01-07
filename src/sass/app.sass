@@ -1,0 +1,43 @@
+@import '../materialize/sass/materialize.scss'
+@import './utils/mp.scss'
+@import './utils/font.sass'
+\:root
+  --bg: black 
+
++font-face('consola', '~/../assets/fonts/consola')
++font-face('coda', '~/../assets/fonts/Coda-Regular')
+
+body 
+  @extend .blue-grey, .darken-3 
+  margin: 0
+  padding: 0
+  overflow: hidden
+  color: white
+  font-family: coda
+main
+ // @extend .card, .col, .s8, .offset-s2, .mt-4, .indigo, .darken-3
+
+button
+  @extend .waves-effect, .waves-light, .btn, .indigo, .accent-1
+  color: black
+  font-weight: bold
+a
+  color: #dedede
+  text-decoration: underline
+
+.moving_bg
+  background-image: url("~/../assets/haze.png")
+  width: 120vw
+  height: 120vh
+  position: absolute
+  top: 0
+  left: 0
+  margin: 0
+  background-position: center
+  background-size: cover
+  z-index: -1
+  margin: -10vh -10vh 0 0
+
+
+
+
