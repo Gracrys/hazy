@@ -4,6 +4,7 @@
 import { Router, Link, Route } from "svelte-routing";
 import { onMount } from 'svelte';
 import Home from './views/Home.svelte'
+import Web from './views/Web.svelte'
 
 const m = {x : 0, y : 0}
 
@@ -59,8 +60,9 @@ export let url = ""
         <a href="http://github.com/gracrys">github</a>
         <!-- <a href="https://t.me/HazyG">telegram</a> -->
       </nav>
-      <Route path="/"><Home /></Route>
       <Route path="*"><Home /></Route>
+      <Route path="/"><Home /></Route>
+      <Route path="/web"><Web /></Route>
     </section>
   </Router>
 </main>
