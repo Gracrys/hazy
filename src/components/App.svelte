@@ -33,6 +33,20 @@ export let url = ""
         margin: auto;
       }
   }
+  @keyframes haze{
+    0% {
+        filter: hue-rotate(45deg);
+    }
+    50% {
+        filter: hue-rotate(-45deg);
+    }
+    100% {
+        filter: hue-rotate(45deg);
+    }
+  }
+  .moving_bg{
+    animation: 4s haze infinite;
+  }
 </style>
 
 <main id="pageContent" on:mousemove={handleMousemove}>
