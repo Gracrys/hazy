@@ -17,6 +17,18 @@ body
 main
  // @extend .card, .col, .s8, .offset-s2, .mt-4, .indigo, .darken-3
 
+main, div
+  scrollbar-width: none
+  &::-webkit-scrollbar 
+    display: none
+    width: 2px
+  &::-webkit-scrollbar-thumb 
+    background: transparent
+
+
+
+
+
 button
   @extend .waves-effect, .waves-light, .btn, .indigo, .accent-1
   color: black
