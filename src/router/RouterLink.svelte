@@ -2,24 +2,54 @@
 import { curRoute, router } from './router.js';
 
 export let page = {
-  path: '/home',
+  path: '#home',
   name: 'Home'
 }
 
-  function redirectTo(event){
-  console.log(event.target.pathname)
-    if(Object.keys(router).includes(event.target.pathname)){
-    // change current router path
-    curRoute.set(event.target.pathname);
-    // push the path into web browser history API
-    window.history.pushState({path: page.path}, '', window.location.origin + page.path);
-    } else {
-      curRoute.set('/home');
-      // push the path into web browser history API
-      window.history.pushState({path: '/home'}, '', window.location.origin + '/home' );
+const hash = window.location.hash;
 
-    }
-  }
+
+const unsubscribe = curRoute.subscribe(value => {
+	});
+
+
+$ : {
+  switch (location.hash) {
+   case "#home":
+
+    curRoute.set(router['#home']);
+  break;
+
+case "#web":
+    curRoute.set(router['#web']);
+      break;
+     default:
+       
+       console.log("fuck my ass")
+       break;
+   }
+
+
+}
+
+function cock (x){
+
+ switch (hash) {
+   case "#home":
+
+    curRoute.set(router['#home']);
+  break;
+
+case "#web":
+    curRoute.set(router['#web']);
+      break;
+     default:
+       
+       console.log("fuck my ass")
+       break;
+   }
+}
+
 
 </script>
 <style>
@@ -30,4 +60,4 @@ export let page = {
   }
 </style>
 
-<a href={page.path} on:click|preventDefault={redirectTo}>{page.name}</a>
+<a href={page.path} on:click|preventDefault={() => false}>{page.name}</a>
