@@ -5,6 +5,7 @@
 import { onMount } from 'svelte';
 import Home from './views/Home.svelte'
 import Web from './views/Web.svelte'
+import logo from'~/../assets/feather.png'
 
 const router = {
   '/': Home,
@@ -39,6 +40,15 @@ function handleMousemove(event) {
     box-shadow: none;
     border: none;
   }
+  .logo{
+    display:block;
+    width: 120px;
+    position: absolute;
+    visibility: hidden;
+  }
+  .logo > img{
+    width: 100%;
+  }
   @media (min-width: 900px){
     section{
         max-width: 80%;
@@ -62,6 +72,7 @@ function handleMousemove(event) {
 </style>
 
 <main id="pageContent" on:mousemove={handleMousemove}>
+ <a href="#home" class="logo"><img src={logo} alt="logo"></a>
   <figure  class="moving_bg" style={`top:${m.y}px;left:${m.x}px;`}/>
     <section>
       <nav>
