@@ -12,11 +12,11 @@ onMount(() => {
 
 }
 )
+
 function handleMousemove(event) {
 		m.x = -(event.clientX /  15);
 		m.y = -(event.clientY / 15);
 	}
-export let url = ""
 </script>
 
 <style>
