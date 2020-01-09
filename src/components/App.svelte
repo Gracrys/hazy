@@ -18,23 +18,6 @@ $: {
     hash = location.hash
 }
 
-
-/*switch (hash) {
-  case "#home":
-    curRoute.set(router['#home']);
-    break;
-
-  case "#web":
-    curRoute.set(router['#web']);
-    break;
-
-  default:
-    console.log("fuck my ass")
-    break;
-}*/
-
-
-
 const m = {x : 0, y : 0}
 onMount(() => {
   
