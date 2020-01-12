@@ -4,6 +4,7 @@
   import sad from '~/../assets/projects/sadgeorgie.jpg'
   import circle from '~/../assets/projects/circles.png'
   import gungi from '~/../assets/projects/gungi.png'
+  import arrow from '~/../assets/icons/arrow.svg'
 
   const projects = [{
     title: "TO DO ",
@@ -57,7 +58,7 @@
 
 <style lang=sass>
 div{
-    max-height: 80vh;
+    max-height: 70vh;
     overflow: auto;
 }
 

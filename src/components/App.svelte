@@ -6,6 +6,7 @@ import { onMount } from 'svelte';
 import Home from './views/Home.svelte'
 import Web from './views/Web.svelte'
 import logo from'~/../assets/feather.png'
+import arrow from '~/../assets/icons/arrow.svg'
 
 const router = {
   '/': Home,
@@ -49,6 +50,14 @@ function handleMousemove(event) {
   .logo > img{
     width: 100%;
   }
+  .back{
+    margin: auto;
+    display: flex;
+    width: 20vw;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
   @media (min-width: 900px){
     section{
         max-width: 80%;
@@ -83,4 +92,7 @@ function handleMousemove(event) {
       </nav>
       <svelte:component this={router[hash] ? router[hash] : Home} />
     </section>
+    {#if hash && hash != "#home"}
+        <a class="back mt-4" href="/"><img src={arrow} alt="arrow" title="go back"></a>
+    {/if}
 </main>
