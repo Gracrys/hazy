@@ -3,7 +3,7 @@
 import RouterLink from '../../router/RouterLink.svelte';
 </script>
 
-<style lang=sass>
+<style lang=scss>
  article{
   width: 80%;
   margin: auto;
@@ -27,12 +27,12 @@ import RouterLink from '../../router/RouterLink.svelte';
   <div>
     <h3>Welcome! I'm 
       <b>
-        <a href="about">Gracrys</a>
+        <a href="#about">Gracrys</a>
       </b>
     </h3>
     <br>
-    <h4>web <a href="#web">developer</a>, ui <a href="#designs">designer</a> <br>
-      hobbyist <a href="#writings">writer</a> and <a href="#music">music</a> lover <br>  
+    <h4>web <a href="#web">developer</a>, ui <a href="#designs">designer</a> <br> and
+      hobbyist <a href="#writings">writer</a> and <a href="#music">music</a> reviewer <br>  
       from Venezuela
     </h4>
   </div>

@@ -23,9 +23,8 @@
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html -d public --public-url ./"
   },
-  "svelte": {
-    "compilerOptions": {
-      "css": true
-    }
+  "dependencies": {
+    "sass": "^1.25.0",
+    "svelte-preprocess": "^3.3.1"
   }
 }

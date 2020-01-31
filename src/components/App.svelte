@@ -5,13 +5,15 @@
 import { onMount } from 'svelte';
 import Home from './views/Home.svelte'
 import Web from './views/Web.svelte'
+import Music from './views/Music.svelte'
 import logo from'~/../assets/feather.png'
 import arrow from '~/../assets/icons/arrow.svg'
 
 const router = {
   '/': Home,
   '#web': Web,
-  '#home' : Home
+  '#home' : Home,
+  '#music' : Music
 }
 let hash
 

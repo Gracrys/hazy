@@ -56,7 +56,7 @@
 
 </div>
 
-<style lang=sass>
+<style lang=scss>
 div{
     max-height: 70vh;
     overflow: auto;
