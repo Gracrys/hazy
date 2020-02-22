@@ -40,6 +40,9 @@ import RouterLink from '../../router/RouterLink.svelte';
     }
   }
  }
+ .block{
+   display: block 
+ }
  h3{
   display: block
  }
@@ -53,8 +56,17 @@ import RouterLink from '../../router/RouterLink.svelte';
     </h3>
     <br>
     <h4>web <a href="#web">developer</a>, ui <a href="#designs">designer</a> <br> and
-      hobbyist <a href="#writings">writer</a> and <a href="#music">music</a> reviewer <br>  
+      hobbyist <a href="#writings">writer</a> and music lover <br>  
       from Venezuela
     </h4>
+  <center class="mt-5">
+      <b >
+     <i>
+      Techniques that make art
+     </i>
+    </b>
+    
+ </center>
+
   </div>
 </article>
