@@ -4,6 +4,7 @@
 // import { Router, Link, Route } from "svelte-routing";
 import { onMount } from 'svelte';
 import Home from './views/Home.svelte'
+import About from './views/About.svelte'
 import Web from './views/Web.svelte'
 import Music from './views/Music.svelte'
 import Design from './views/Design.svelte'
@@ -17,6 +18,7 @@ const router = {
   '/': Home,
   '#web': Web,
   '#home' : Home,
+  '#about' : About,
   '#music' : Music,
   '#glitch' : Glitch,
   '#design' : Design
@@ -51,6 +53,11 @@ function handleMousemove(event) {
     background-color: transparent;
     box-shadow: none;
     border: none;
+  }
+  section{
+    @media screen and (max-width: 600px) {
+      margin-top: 10vh;
+    }
   }
   .logo{
     display:block;
@@ -138,7 +145,7 @@ function handleMousemove(event) {
  <a href="#home" class="logo"><img src={logo} alt="logo"></a>
   <figure  class="moving_bg" style={`top:${m.y}px;left:${m.x}px;`}/>
     <section>
-      <nav>
+      <nav class="main_nav">
         <a href="http://codepen.io/gracrys">codepen</a>
         <a href="http://twitter.com/gracrys">twitter</a>
         <a href="http://github.com/gracrys">github</a>

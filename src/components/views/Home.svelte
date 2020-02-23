@@ -62,7 +62,7 @@ import RouterLink from '../../router/RouterLink.svelte';
   <center class="mt-5">
       <b >
      <i>
-      Techniques that make art
+      «Techniques that make art»
      </i>
     </b>
     
