@@ -46,7 +46,8 @@ div{
  article{
   margin: auto;
   display: flex;
-  background-color: #121212 ;
+  background-color:#343434dc ;
+
   flex-direction: column;
   align-items: center;
  } 
@@ -88,12 +89,12 @@ div{
 
 <div class="container mt-4">
   {#each projects as project }
-    <article class="card pt-2 mb-5">
+    <article class="card pt-2 px-5 mb-5">
       <h5>{project.title}</h5>
         {#if !project.detail}
             <i out:fade={{delay:100}} on:click={()=>project.detail = true} title="click for detailed info">{project.summary}</i>
         {/if}
-      <figure class="px-5">
+      <figure class="">
 
         {#if !project.detail}
             <img out:spin src={project.img} in:fade alt={project.img}>

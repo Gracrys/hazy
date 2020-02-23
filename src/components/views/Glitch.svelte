@@ -74,17 +74,21 @@ div{
     max-height: 70vh;
     overflow: auto;
 }
+section{
+  background-color:#343434dc ;
+  position: relative;
+  h4{
+      text-align: center;
+  }
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  background-color: #121212 ;
-  position: relative;
 
 }
 article{
   margin: auto;
   display: flex;
-  background-color: #121212 ;
   flex-direction: column;
   align-items: center;
  } 
@@ -152,8 +156,11 @@ figure:not(.highlight) img{
 
 
 <div class=" mt-4">
-    <section class="grid pt-4">
-  {#each projects as project }
+    <section class="">
+    <h4 class="pt-4">Image edition</h4>
+
+    <div class="grid pt-4">
+      {#each projects as project }
       <figure >
         <img on:click|preventDefault={() => current = {...project, highlight: true}}  src={project.img}  alt={project.img}>
         <figcaption   class=" px-4">
@@ -161,7 +168,7 @@ figure:not(.highlight) img{
         </figcaption>
       </figure>
   {/each}
-  
+  </div>
  </section>
 <!--   <article class="card pt-2 mb-5">
         <p> For more proyects, checkout my 

@@ -10,6 +10,8 @@ import Design from './views/Design.svelte'
 import Glitch from './views/Glitch.svelte'
 import logo from'~/../assets/feather.png'
 import arrow from '~/../assets/icons/arrow.svg'
+import menu from '~/../assets/icons/menu.svg'
+import down from '~/../assets/icons/down.svg'
 
 const router = {
   '/': Home,
@@ -19,6 +21,9 @@ const router = {
   '#glitch' : Glitch,
   '#design' : Design
 }
+
+
+
 let hash
 
 $: {
@@ -38,7 +43,7 @@ function handleMousemove(event) {
 	}
 </script>
 
-<style>
+<style lang=scss>
   nav{
     display: flex;
     justify-content: space-evenly;
@@ -56,6 +61,48 @@ function handleMousemove(event) {
   .logo > img{
     width: 100%;
   }
+.hamburger{
+  display:flex;
+  flex-direction: column;
+  float: right;
+    position: absolute;
+    top: 1.6rem;
+    right: 0;
+  > img{
+    width: 3rem;
+    margin: auto;
+  }
+  nav{
+    align-items: flex-start;
+  }
+  ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    min-height: 0;
+    max-height: 0;
+    transition: all 0.6s;
+  }
+  &:hover{
+    nav > ul{
+      height: auto;
+      max-height: 100vh;
+    }
+  }
+  .nested:hover ul{
+      transition: all 1s;
+      height: auto;
+      max-height: 100vh;
+    }
+}
+  .nested{
+    img{
+      width: 1rem;
+    }
+  }
+
   .back{
     margin: auto;
     display: flex;
@@ -64,6 +111,7 @@ function handleMousemove(event) {
     align-items: center;
     
   }
+
   @media (min-width: 900px){
     section{
         max-width: 80%;
@@ -96,8 +144,25 @@ function handleMousemove(event) {
         <a href="http://github.com/gracrys">github</a>
         <!-- <a href="https://t.me/HazyG">telegram</a> -->
       </nav>
+     
       <svelte:component this={router[hash] ? router[hash] : Home} />
     </section>
+ <div class="hamburger">
+        <img src={menu} alt="hamburger" title="main menu"> 
+        <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#web">Programming</a></li>
+          <li class="nested">Designs <img src={down} alt="nested menu" > 
+            <ul>
+              <li><a href="#design">UI / UX</a></li>
+              <li><a href="#glitch">Glitch</a></li>
+            </ul>
+          </li>
+          <li><a href="#writing">Writings</a></li>
+        </nav>
+      </div> 
     {#if hash && hash != "#home"}
         <a class="back mt-4" href="/"><img src={arrow} alt="arrow" title="go back"></a>
     {/if}
