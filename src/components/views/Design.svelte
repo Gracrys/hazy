@@ -1,6 +1,7 @@
 <script>
 import login from '~/../assets/designs/log in.png'
 import mountain from '~/../assets/designs/mountains.jpg'
+import music from '~/../assets/designs/music player.png'
 import { fade } from 'svelte/transition';
     
 
@@ -18,6 +19,14 @@ const projects = [  {
     img: mountain,
     detail: false 
   },
+  {
+    title: "Music Player",
+    summary: "Using new neomorphism trend with a subtle dark blue palette ",
+    description: "Wanted to do something with a monocolor palette and neomorphism, there are a lot of music player designs, even with neomorphism there are a pair, i tried to give it a new grasp, while it maintains a little subtler style, the playing with shadows and inner shadows was tough.",
+    img: music,
+    detail: false 
+  },
+
   ]
 
 
@@ -54,6 +63,7 @@ div{
   article img{
     width: 100%;
     transition: all 0.6s;
+    max-height: 70vh;
     left: 0; 
     top: 0
   }
