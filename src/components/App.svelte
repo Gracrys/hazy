@@ -8,6 +8,7 @@ import About from './views/About.svelte'
 import Web from './views/Web.svelte'
 import Music from './views/Music.svelte'
 import Design from './views/Design.svelte'
+import Writings from './views/Writings.svelte'
 import Glitch from './views/Glitch.svelte'
 import logo from'~/../assets/feather.png'
 import arrow from '~/../assets/icons/arrow.svg'
@@ -20,8 +21,9 @@ const router = {
   '#home' : Home,
   '#about' : About,
   '#music' : Music,
+  '#writings' : Writings,
   '#glitch' : Glitch,
-  '#design' : Design
+  '#design' : Design,
 }
 
 
