@@ -161,13 +161,13 @@ function handleMousemove(event) {
           <li><a href="/">Home</a></li>
           <li><a href="#about">About me</a></li>
           <li><a href="#web">Programming</a></li>
+          <li><a href="#writing">Writings</a></li>
           <li class="nested">Designs <img src={down} alt="nested menu" > 
             <ul>
               <li><a href="#design">UI / UX</a></li>
               <li><a href="#glitch">Glitch</a></li>
             </ul>
           </li>
-          <li><a href="#writing">Writings</a></li>
         </nav>
       </div> 
     {#if hash && hash != "#home"}

@@ -159,7 +159,7 @@ figure:not(.highlight) img{
     <section class="">
     <h4 class="pt-4">Image edition</h4>
 
-    <div class="grid pt-4">
+    <div class="grid py-4">
       {#each projects as project }
       <figure >
         <img on:click|preventDefault={() => current = {...project, highlight: true}}  src={project.img}  alt={project.img}>
