@@ -65,7 +65,12 @@ div{
     transition: all 0.6s;
     max-height: 70vh;
     left: 0; 
-    top: 0
+    top: 0;
+    max-height: 40vh;
+    height: 100%;
+    width: auto;
+    margin: auto;
+    display: block;
   }
   article figure{
     position: relative;
