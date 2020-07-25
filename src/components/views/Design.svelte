@@ -2,6 +2,9 @@
 import login from '~/../assets/designs/log in.png'
 import mountain from '~/../assets/designs/mountains.jpg'
 import music from '~/../assets/designs/music player.png'
+import gadow from '~/../assets/designs/gadow.jpg'
+import saph from '~/../assets/designs/saph.jpg'
+import wave from '~/../assets/designs/vaporwave.jpg'
 import { fade } from 'svelte/transition';
     
 
@@ -26,7 +29,29 @@ const projects = [  {
     img: music,
     detail: false 
   },
+	{
 
+	title: "Gadow",
+	summary: "Social red for creators, in a dark - blue palette.",
+	description: "Proposal for a social red for creators, inspired by some palettes like discord and twitter, and using depth design style, sadly it never got to the development workbench, but i think the wireframe is being used for a similar project.",
+	img: gadow,
+	detail: false
+	
+	},
+	{
+	title: "Saphirus",
+	summary: "Social red for games and gamers",
+	description: "Application for all kind of gamers to find and play all kind of indie games with a gaining system and others social features, tried to use an approach using many gradients and a blue pattern, trying to focus on what is a saphire",
+	img: saph,
+	detail: false
+	},
+	{
+	title: "vaporwave",
+	summary : "Little design of a vapor wave popup",
+	description: "modal interactive made in figma using a color duotone approach and vapor wave style",
+	img: wave,
+	detail: false
+}
   ]
 
 
