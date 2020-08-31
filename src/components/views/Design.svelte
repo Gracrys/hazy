@@ -5,6 +5,7 @@ import music from '~/../assets/designs/music player.png'
 import gadow from '~/../assets/designs/gadow.jpg'
 import saph from '~/../assets/designs/saph.jpg'
 import wave from '~/../assets/designs/vaporwave.jpg'
+import green from '~/../assets/designs/green.png'
 import { fade } from 'svelte/transition';
     
 
@@ -56,7 +57,8 @@ const projects = [  {
 	title: "Green",
 	summary: "Neumorphism design on a green palette",
 	description: "trying out a green palette and neumorphism for an organic design of a plants blog",
-	detail: false
+	detail: false,
+  img: green
 }
   ]
 
