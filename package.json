@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "sass": "^1.25.0",
+    "surge": "^0.21.6",
     "svelte-preprocess": "^3.3.1"
   }
 }

@@ -52,10 +52,12 @@ const projects = [  {
 	img: wave,
 	detail: false
 	},
+  {
 	title: "Green",
 	summary: "Neumorphism design on a green palette",
 	description: "trying out a green palette and neumorphism for an organic design of a plants blog",
 	detail: false
+}
   ]
 
 
