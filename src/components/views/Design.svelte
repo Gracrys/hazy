@@ -19,7 +19,7 @@ const projects = [  {
     {
     title: "Mountains",
     summary: "Relaxing ui with snowy mountain concept, also, writing made by me...",
-    description: "Show off for codepen, the concept was to give a background to the writing, the card where the text is showing is made with some blur property, which is still experimental. <a href=\"https://codepen.io/gracrys/full/rbPdMe\"> link to pen </a>",
+    description: "Show off for codepen, the concept was to give a background to the writing, the card where the text is showing is made with some blur property, which is still experimental in some browsers",
     img: mountain,
     detail: false 
   },
@@ -92,8 +92,8 @@ div{
 
   flex-direction: column;
   align-items: center;
- } 
-  article img{
+
+  img{
     width: 100%;
     transition: all 0.6s;
     max-height: 70vh;
@@ -104,12 +104,13 @@ div{
     width: auto;
     margin: auto;
     display: block;
+    cursor: crosshair;
   }
-  article figure{
+  figure{
     position: relative;
     width: 100%;
   }
-  article figcaption{
+  figcaption{
      top:0; 
     width: 100%;
     display: block;
@@ -121,16 +122,18 @@ div{
         display: block;
     }
   }
-  article h5{
+  h5{
     transition: all 0.4s ease-out;
     position: relative;
     top: 0;
     z-index: 2;
+    cursor: pointer;
   }
-  article > i{
+   > i{
     color: #ffffff99;
     cursor: pointer
   }
+}
   
  </style>
 
@@ -138,14 +141,18 @@ div{
 <div class="container mt-4">
   {#each projects as project }
     <article class="card pt-2 px-5 mb-5">
-      <h5>{project.title}</h5>
+      <h5 title="click for detailed info" on:click={()=>project.detail = true}>{project.title}</h5>
+      
         {#if !project.detail}
+           
             <i out:fade={{delay:100}} on:click={()=>project.detail = true} title="click for detailed info">{project.summary}</i>
         {/if}
       <figure class="">
 
         {#if !project.detail}
-            <img out:spin src={project.img} in:fade alt={project.img}>
+          <a href={project.img} target="_blank">
+            <img out:spin  src={project.img} in:fade alt={project.img}>
+          </a>
         {:else}
             <figcaption in:fade="{{ delay: 500}}"  class=" px-4"><p class="">{project.description}</p></figcaption>
             <a href="#" on:click|preventDefault={()=>project.detail = false}> hide</a>
