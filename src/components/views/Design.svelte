@@ -105,6 +105,7 @@ div{
     margin: auto;
     display: block;
     cursor: crosshair;
+    object-fit: scale-down;
   }
   figure{
     position: relative;
