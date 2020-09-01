@@ -55,7 +55,7 @@ import RouterLink from '../../router/RouterLink.svelte';
       </b>
     </h3>
     <br>
-    <h4>web <a href="#web">developer</a>, ui <a href="#design">designer</a> <br> and
+    <h4>web <a href="#web">developer</a>, UI / UX <a href="#design">designer</a> <br> and
       hobbyist <a href="#writings">writer</a> and music lover <br>  
       from Venezuela
     </h4>
