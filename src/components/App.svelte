@@ -83,6 +83,7 @@ function handleMousemove(event) {
   }
   nav{
     align-items: flex-start;
+    margin-top: 1rem;
   }
   ul{
     display: flex;
