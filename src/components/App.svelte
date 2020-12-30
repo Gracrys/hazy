@@ -58,7 +58,8 @@ function handleMousemove(event) {
   }
   section{
     @media screen and (max-width: 600px) {
-      margin-top: 10vh;
+/*      margin-top: 10vh; */
+
     }
   }
   .logo{
@@ -106,7 +107,10 @@ function handleMousemove(event) {
       height: auto;
       max-height: 100vh;
     }
-}
+
+    @media screen and (max-width: 600px) {
+      left: -2rem;
+    }
   .nested{
     img{
       width: 1rem;
