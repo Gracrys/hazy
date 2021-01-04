@@ -114,9 +114,8 @@ function handleMousemove(event) {
     }
   }
    @media screen and (max-width: 600px) {
-      left: -2rem;
+      display: none    }
     }
-  }
   .back{
     margin: auto;
     display: flex;
