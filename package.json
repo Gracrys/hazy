@@ -8,7 +8,7 @@
   "license": "MIT",
   "devDependencies": {
     "node-css": "^0.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-svelte": "^4.0.5",
     "pug": "^2.0.4",
