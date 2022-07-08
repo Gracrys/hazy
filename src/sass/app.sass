@@ -1,0 +1,71 @@
+// @import '../materialize/sass/materialize.scss'
+@import './utils/mp.scss'
+@import './utils/font.sass'
+\:root
+  --bg: black 
+
++font-face('consola', '/fonts/consola')
++font-face('coda', '/fonts/Coda-Regular')
+
+body 
+  // @extend .blue-grey, .darken-3 
+  margin: 0
+  padding: 0
+  overflow: hidden
+  color: white
+  font-family: coda
+  cursor: crosshair
+    
+    
+main
+ // @extend .card, .col, .s8, .offset-s2, .mt-4, .indigo, .darken-3
+
+main, div
+  scrollbar-width: none
+  &::-webkit-scrollbar 
+    display: none
+    width: 2px
+  &::-webkit-scrollbar-thumb 
+    background: transparent
+
+button
+  // @extend .waves-effect, .waves-light, .btn, .indigo, .accent-1
+  color: black
+  font-weight: bold
+a
+  color: #dedede
+  text-decoration: underline
+
+.moving_bg
+  background-image: url("/haze.png")
+  width: 130vw
+  height: 130vh
+  position: absolute
+  top: 0
+  left: 0
+  margin: 0
+  background-position: center
+  background-size: cover
+  z-index: -1
+  margin: -10vh -10vh 0 0
+  @media screen and ( max-width: 900px )
+    width: 120vw
+    height: 120vh
+    margin: 0
+    
+
+
+
+
+h3
+  font-size: 2.92rem
+h4
+  font-size: 2.28rem
+
+    
+.container
+  margin: auto
+  @media only screen and (min-width: 993px)
+    width: 70%
+  @media only screen and (min-width: 601px)
+    width: 86%
