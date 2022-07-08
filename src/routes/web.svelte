@@ -95,6 +95,7 @@ div{
     transition: all 1s;
     padding-top: 0px;
     overflow: hidden;
+    box-sizing: border-box;
   }
   article h5{
     transition: all 0.4s ease-out;
