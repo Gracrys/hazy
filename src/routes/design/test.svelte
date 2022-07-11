@@ -6,9 +6,10 @@ import { fade } from 'svelte/transition';
 const projects = [  {
     title: "Login screen",
     summary: "Testing with a dark palette and inspired by some kind of red sun...",
-    description: "Kind of conceptual design, based in some post apocalyptic images i found while surfing the web, i see the purpose of the app to show a relaxed ambient, while the colors are calm and with low saturation, also its minimalist design and layout keep you focused on what is important.",
+    description: "Kind of conceptual design, based in some post apocalyptic images i found while surfing the web, the purpose of the app was to show a relaxed ambient, while the colors are calm and with low saturation, also its minimalist design and layout keep you focused on what is important.",
     img: '/designs/log in.png',
-    detail: false 
+    detail: false,
+    more: "login" 
   },
    
 {
@@ -17,7 +18,8 @@ const projects = [  {
     summary: "Crypto Platform for a new enterprise.",
     description: "Study of the designing and development of this crypto platform which went through... Too many iterations.",
     img: '/designs/gadow.jpg',
-    detail: false
+    detail: false,
+
     
     }, 
 	{
@@ -47,7 +49,7 @@ const projects = [  {
  {
     title: "Mountains",
     summary: "Relaxing ui with snowy mountain concept, also, writing made by me...",
-    description: "Show off for codepen, the concept was to give a background to the writing, the card where the text is showing is made with some blur property, which is still experimental in some browsers",
+    description: "Show off for codepen, the concept was to give a background to the writing, the card where the text is showing is made with some blur property, to give that glass effect, which is still experimental in some browsers. It is more of a conceptual design, where we use cold elements to accompany the writing",
     img: '/designs/mountains.JPG',
     detail: false 
   },
@@ -148,8 +150,9 @@ div{
         </p> 
     </article>
   {#each projects as project }
-    <article class="card pt-2 px-5 mb-5">
-      <h5 title="click for detailed info" on:click={()=>project.detail = true}>{project.title}</h5>
+
+    <article class="card pt-2 px-5 mb-5" on:click={()=>project.detail = !project.detail}>
+      <h5 title="click for detailed info" >{project.title}</h5>
       
         {#if !project.detail}
            
@@ -158,14 +161,19 @@ div{
       <figure class="">
 
         {#if !project.detail}
-          <a href={project.img} target="_blank">
             <img out:spin  src={project.img} in:fade alt={project.img}>
-          </a>
         {:else}
             <figcaption in:fade="{{ delay: 500}}"  class=" px-4"><p class="">{project.description}</p></figcaption>
-            <a href="#" on:click|preventDefault={()=>project.detail = false}> hide</a>
+        <!--     <a href="#" on:click|preventDefault={()=>project.detail = false}> hide</a> -->
         {/if}
       </figure>
+      {#if project.more}
+          <footer class="mb-4">
+              <a href="{project.more}">
+                 Case study 
+              </a>
+          </footer>
+       {/if}
     </article>
   {/each}
     <article class="card pt-2 mb-5">

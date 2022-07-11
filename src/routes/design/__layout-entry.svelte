@@ -21,20 +21,25 @@ div{
     width: 100%;
 }
 .title{
-    padding-top: 2rem;
-    padding-bottom: 2rem
+    // padding-top: 2rem;
+    // padding-bottom: 2rem
 }
 
 img.principal{
     float:left;
     margin: 1rem;
+    width: 40%;
 }
+ > section{
+    width: 100%;
+    padding: 1rem 3rem;
+ }
 }
   
  </style>
 
 <div class="container mt-4">
-    <article class="card pt-2 mb-5">
+    <article class="studycase card pt-2 mb-5">
         <slot></slot>
     </article>
 </div>

@@ -1,0 +1,22 @@
+<svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_di)">
+<path d="M23.6032 24.9276L6.06349 24.9276C5.51622 24.9276 4.99136 24.6749 4.60438 24.2252C4.2174 23.7756 4 23.1657 4 22.5297L4 3.34705C4 2.71111 4.2174 2.10121 4.60438 1.65153C4.99136 1.20185 5.51622 0.949219 6.06349 0.949219L23.6032 0.949219C24.1504 0.949219 24.6753 1.20185 25.0623 1.65153C25.4493 2.10121 25.6667 2.71111 25.6667 3.34705L25.6667 8.21465L31.2587 3.57485C31.4127 3.44744 31.5939 3.37164 31.7824 3.35573C31.9709 3.33981 32.1596 3.3844 32.3278 3.48461C32.4961 3.58482 32.6373 3.73681 32.7363 3.92398C32.8352 4.11115 32.888 4.32631 32.8889 4.54597L32.8889 21.3308C32.888 21.5505 32.8352 21.7656 32.7363 21.9528C32.6373 22.14 32.4961 22.292 32.3278 22.3922C32.1596 22.4924 31.9709 22.537 31.7824 22.521C31.5939 22.5051 31.4127 22.4293 31.2587 22.3019L25.6667 17.6621L25.6667 22.5297C25.6667 23.1657 25.4493 23.7756 25.0623 24.2252C24.6753 24.6749 24.1504 24.9276 23.6032 24.9276Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_di" x="0" y="0.949219" width="36.8889" height="31.9783" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow"/>
+</filter>
+</defs>
+</svg>
