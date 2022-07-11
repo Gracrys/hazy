@@ -20,6 +20,7 @@ const projects = [  {
     img: '/designs/gadow.jpg',
     detail: false,
 
+
     
     }, 
 	{
@@ -28,6 +29,7 @@ const projects = [  {
 	summary: "Social red for creators, in a dark - blue palette.",
 	description: "Proposal for a social red for creators, inspired by some palettes like discord and twitter, and using depth design style, sadly it never got to the development workbench, but i think the wireframe is being used for a similar project.",
 	img: '/designs/gadow.jpg',
+    more: 'gadow',
 	detail: false
 	
 	},
@@ -36,6 +38,7 @@ const projects = [  {
 	summary: "Social red for games and gamers",
 	description: "Application for all kind of gamers to find and play all kind of indie games with a gaining system and others social features, tried to use an approach using many gradients and a blue pattern, trying to focus on what is a saphire",
 	img: '/designs/saph.jpg',
+    more: 'saph'
 	detail: false
 	},
 	
