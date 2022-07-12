@@ -10,12 +10,10 @@ const config = {
 		kit: {
         // SET THE PATHS HERE
 
-         adapter: adapter(
-			{
+         adapter: adapter({
         	 edge: false,
-       split: true
-        }
-	)
+		     split: true
+        })
     }
 
 };
