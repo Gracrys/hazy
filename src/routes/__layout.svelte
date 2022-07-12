@@ -1,7 +1,17 @@
+
+
 <script>
   import Header from '$lib/header.svelte'
   import '../sass/app.sass'
-import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
+  import { page } from '$app/stores';
+
+
+let path 
+$: {
+   path = !!$page.url.pathname.match(/(?<=\/)\w+/gi) 
+   console.log(path)
+  }
 
   const m = {x : 0, y : 0}
 onMount(() => {
@@ -20,13 +30,14 @@ function handleMousemove(event) {
      <!-- <a href="#home" class="logo"><img src={logo} alt="logo"></a> -->
       <figure  class="moving_bg" style={`top:${m.y}px;left:${m.x}px;`}/>
    
- <!--    {#if hash && hash != "#home"}
-        <a class="back mt-4" href="/"><img src={arrow} alt="arrow" title="go back"></a>
-    {/if} -->
+   
 
     <section>
   <slot />
   </section>
+   {#if path }
+        <a class="back mt-4" href="/"><img src="/icons/arrow.svg" alt="arrow" title="go back"></a>
+    {/if}
 </main>
 
 <style lang="scss">

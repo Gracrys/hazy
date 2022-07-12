@@ -159,14 +159,14 @@ div{
       
         {#if !project.detail}
            
-            <i out:fade={{delay:100}} on:click={()=>project.detail = true} title="click for detailed info">{project.summary}</i>
+            <i  on:click={()=>project.detail = true} title="click for detailed info">{project.summary}</i>
         {/if}
       <figure class="">
 
         {#if !project.detail}
-            <img out:spin  src={project.img} in:fade alt={project.img}>
+            <img   src={project.img} in:fade alt={project.img}>
         {:else}
-            <figcaption in:fade="{{ delay: 500}}"  class=" px-4"><p class="">{project.description}</p></figcaption>
+            <figcaption  class=" px-4"><p class="">{project.description}</p></figcaption>
         <!--     <a href="#" on:click|preventDefault={()=>project.detail = false}> hide</a> -->
         {/if}
       </figure>

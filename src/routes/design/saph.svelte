@@ -1,3 +1,7 @@
+<script>
+</script>
+
+
 <div class="container mt-4">
     <article class="studycase card pt-2 mb-5">
 <div>
