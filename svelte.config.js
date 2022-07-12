@@ -11,10 +11,10 @@ const config = {
         // SET THE PATHS HERE
 
          adapter: adapter(
-//			{
-//         	 edge: false,
-//        split: true
-//         }
+			{
+        	 edge: false,
+       split: true
+        }
 	)
     }
 
